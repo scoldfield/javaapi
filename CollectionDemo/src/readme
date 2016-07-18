@@ -1,0 +1,11 @@
+用Collections.sort方法对list排序有两种方法：
+
+1. 第一种是list中的对象实现Comparable接口
+
+2. 第二种方法是根据Collections.sort重载方法来实现
+
+3. 比较：前者代码结构简单，但是只能根据固定的属性排序，后者灵活，可以临时指定排序项，但是代码不够简洁 
+
+4. 多字段比较的场合： comparatorTest.java中的test3()方法
+
+5. 总结：为了方便，自己就用Comparator接口
