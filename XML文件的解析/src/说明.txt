@@ -1,0 +1,9 @@
+XML文件的解析
+
+1、主流的解析方法有四种，即：DOM、SAX、JDOM、DOM4J
+
+2、本文主要介绍DOM4J来解析XMl文件，步骤：
+	(1)将.xml文件封装成File对象
+	(2)将File对象转换成Document对象。通过SAXReader对象实现
+	(3)从Document对象中获取根节点、子节点，以及每个节点的name和text属性
+	注意：xml文件中的所有元素都化身成根节点和子节点的概念，且只有一个根节点，多个子节点，这些我都成为"节点"。每个节点都有name和text属性，相当于key-value
