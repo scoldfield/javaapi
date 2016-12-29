@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 
  * reader线程在读取数据的时候等待时间太长，可被自身或者外部线程中断，中断后reader线程会抛出异常并被catch捕获，同时继续执行try-catch后面代码
  */
-public class ReentrantLockAndSynchronized {
+public class _2_ReentrantLockAndSynchronized {
     private static boolean useSyschronized = false;
     public static void main(String[] args) throws InterruptedException {
         IBuffer buffer = null;

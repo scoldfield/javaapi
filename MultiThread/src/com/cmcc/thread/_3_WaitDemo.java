@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  * 1、必须用在synchronized代码块或synchronized方法内
  * 2、wait()与notify()/notifyAll()必须使用相同的锁对象去调用
  */
-public class WaitTest {
+public class _3_WaitDemo {
 
     /*
      * 内部类
@@ -109,9 +109,9 @@ public class WaitTest {
     }
 
     public static void main(String[] args) {
-        Game game = new WaitTest().new Game();
+        Game game = new _3_WaitDemo().new Game();
         for (int i = 0; i < 10; i++)
-            game.addPlayer(new WaitTest().new Athlete(i, game));
+            game.addPlayer(new _3_WaitDemo().new Athlete(i, game));
         
         new Thread(game).start();
     }

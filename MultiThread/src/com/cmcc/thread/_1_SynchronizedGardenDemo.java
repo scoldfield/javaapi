@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 /*
  * 同步花园的例子：即花园有5个入口，每个入口都会有人进入，统计一天总共的进园人数
  */
-public class SynchronizedGardenDemo {
+public class _1_SynchronizedGardenDemo {
     
     public static void main(String[] args) throws InterruptedException {
         /*
