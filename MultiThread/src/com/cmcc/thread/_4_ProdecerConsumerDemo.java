@@ -11,6 +11,8 @@ import java.util.concurrent.TimeUnit;
  * 
  * 前面讲解了如何解决线程间并发访问共享数据的问题，解决方法就是对操作共享数据的代码块加锁，形成序列任务。
  * 这一节讲解如何在线程间进行通信协作，使一个线程可以等待另一个线程完成后再继续执行
+ * 
+ * 总结：wait()/notify()/notifyAll()线程间协作方法需要与共享锁联合使用
  */
 public class _4_ProdecerConsumerDemo {
     public static void main(String[] args) throws InterruptedException {
