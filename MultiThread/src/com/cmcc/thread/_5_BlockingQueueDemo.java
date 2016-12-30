@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit;
  * 注意：BlockingQueue使用时要注意以下2点：
  * 1、实现类使用LinkedBlockingQueue或者ArrayBlockingQueue两种（Queue的实现类一般用LinkedList）
  * 2、存取数据用put()、take()。这两种方法会自动进行阻塞等待，实现了之前的手动wait()/notify()
+ * 3、现在理解BlockingQueue的缺陷是：最好只用“一个对一个”，也就是说最好一个线程去队列中操作，另一个线程等待。不能有多个线程等待，否则次序会乱☆☆☆☆☆
  * 
  * 经典的吐司制作的示例代码：一台机器有3个任务：制作吐司，接着给吐司抹黄油，最后给吐司涂上果酱
  */
